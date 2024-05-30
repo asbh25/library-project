@@ -10,6 +10,9 @@ const port = 3000;
 // Middleware
 app.use(bodyParser.json());
 
+// Enable CORS
+app.use(cors());
+
 // Ensure database is in sync before starting the server
 sequelize
   .sync()
