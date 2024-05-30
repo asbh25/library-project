@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const sequelize = require("./db");
+const cors = require('cors');
 const Paper = require("./models/paper");
 const paperRoutes = require("./routes/paperRoutes");
 
